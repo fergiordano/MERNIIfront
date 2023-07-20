@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
+import {  } from "semantic-ui-react";
+import '../css/navegacion.css'
 
 const Navegacion = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-            Navbar
-            </a>
+        <div className="container-fluid ">
             <button
             className="navbar-toggler"
             type="button"
@@ -18,19 +17,19 @@ const Navegacion = () => {
             >Name
             <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="navbar navbar-collapse " id="navbarNav">
                 <ul className="navbar-nav">
-                    <li>
+                    <li className="nav">
                         <NavLink to="/">
                             Home
                         </NavLink>
                     </li>
-                    <li>
+                    <li className="nav">
                         <NavLink to="/vite">
                             Vite
                         </NavLink>
                     </li>
-                    <li>
+                    <li className="nav">
                         <NavLink to="/formulario">
                             Formulario
                         </NavLink>

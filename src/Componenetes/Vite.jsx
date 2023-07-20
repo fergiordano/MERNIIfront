@@ -1,8 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Table, Button } from 'semantic-ui-react';
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
 
 const Vite = () =>{
 
@@ -52,7 +51,7 @@ const Vite = () =>{
         <div className="container m-5">
             <div className="text-center m-5">
                 <h1>
-                    Estamos en la Página de Clientes
+                    Pagina de clientes
                 </h1>
             </div>
 

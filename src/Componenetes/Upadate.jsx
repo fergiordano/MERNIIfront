@@ -2,6 +2,7 @@ import { Form, Button } from 'semantic-ui-react'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import './index.css'
 
 const Update = () =>{
 

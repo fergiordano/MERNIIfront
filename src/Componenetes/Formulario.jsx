@@ -2,6 +2,7 @@ import { Form, Button } from 'semantic-ui-react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
 
+
 const Formulario = () =>{
 
     const URL = import.meta.env.VITE_URL;
@@ -37,12 +38,12 @@ const Formulario = () =>{
 
 
     return (
-        <div className="container mt-5">
+        <div className="container form">
             <div className="text-center m-5">
-                <h1>Formulario de Registro</h1>
+                <h1>Registrarse</h1>
             </div>
             <Form onSubmit={handleSubmit(onSubmit)}>
-                <Form.Field>
+                <Form.Field className='m-5'>
                     <label>Nombre: </label>
                     <input 
                         placeholder='Nombre'
@@ -58,7 +59,7 @@ const Formulario = () =>{
                 </Form.Field>
                 {errors.nombre && <p className="errores">El nombre es obligatorio y con un máximo de 50 caracteres</p>}
 
-                <Form.Field>
+                <Form.Field className='m-5'>
                     <label>Apellido: </label>
                     <input 
                         placeholder='Apellido'
@@ -74,7 +75,7 @@ const Formulario = () =>{
                 </Form.Field>
                 {errors.apellido && <p className="errores">El apellido es obligatorio y con un máximo de 80 caracteres</p>}
 
-                <Form.Field>
+                <Form.Field className='m-5'>
                     <label>Email: </label>
                     <input 
                         placeholder='Email'
@@ -91,7 +92,7 @@ const Formulario = () =>{
                 </Form.Field>
                 {errors.email && <p className="errores">El email es obligatorio</p>}
 
-                <Form.Field>
+                <Form.Field className='m-5'>
                     <label>Password: </label>
                     <input 
                         placeholder='Password de 6 a 10 caracteres'
@@ -107,7 +108,7 @@ const Formulario = () =>{
                 </Form.Field>
                 {errors.password && <p className="errores">El password debe contener minúsculas, mayúsculas y entre 6 y 10 caracteres</p>}
 
-                <div className='centrar'>
+                <div className='text-center'>
                         <Button.Group>
                             <Button type='button' onClick={() => reset()} primary>Limpiar Formulario</Button>
                             <Button.Or />
